@@ -1,0 +1,52 @@
+{
+  "name": "assemblyscript-template",
+  "author": "<Name>",
+  "version": "0.0.0",
+  "description": "An assembly script package template",
+  "homepage": "https://github.com/<UserName>/assemblyscript-template",
+  "license": "MIT",
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "./dist/lib.js",
+  "bin": "./dist/cli.js",
+  "html": "./dist/index.html",
+  "scripts": {
+    "format": "prettier --write .",
+    "test.format": "prettier . --check",
+    "lint": "eslint . --fix",
+    "test.lint": "eslint .",
+    "test": "atom --test spec",
+    "clean": "shx rm -rf dist",
+    "build.wasm": "asc ./src/wasm/lib.as.ts -b ./dist/index.wasm --exportRuntime --transform as-bind --target release",
+    "build.node": "npm run build.wasm && tsc -p ./src/node/tsconfig.json",
+    "build.browser.unit": "npm run build.wasm && tsc -p ./src/browser/tsconfig.json && shx cp -r ./src/browser ./dist",
+    "build.browser": "npm run build.wasm && parcel build --target html ./src/browser/index.html",
+    "build.wasi": "asc ./src/wasi/cli.as.ts -b ./dist/wasi.wasm --exportRuntime --transform as-bind --target release",
+    "start.browser": "servor ./dist/ --browse --reload",
+    "start.node": "node ./dist/node/cli.js",
+    "start.wasi": "wasmtime ./dist/wasi.wasm",
+    "prepublishOnly": "shx rm -rf ./dist/tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@assemblyscript/loader": "^0.19.10",
+    "@types/node": "16.4.13",
+    "as-bind": "0.8.0",
+    "as-wasi": "^0.4.6",
+    "assemblyscript": "^0.19.10",
+    "eslint-config-atomic": "^1.16.2",
+    "parcel": "^2.0.0-rc.0",
+    "prettier-config-atomic": "^2.0.5",
+    "servor": "^4.0.2",
+    "shx": "0.3.3"
+  },
+  "targets": {
+    "html": {
+      "context": "browser",
+      "engines": {
+        "browsers": "Chrome 76"
+      }
+    }
+  },
+  "prettier": "prettier-config-atomic"
+}
