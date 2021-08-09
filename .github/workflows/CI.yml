@@ -33,7 +33,9 @@ jobs:
             ~/.pnpm-store
             D:\.pnpm-store
             ./node_modules
-          key: "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-Pnpm:${{ matrix.pnpm }}"
+          key: "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-Pnpm:${{ matrix.pnpm }}-${{ hashFiles('./package.json') }}"
+          restore-keys: |
+            "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-Pnpm:${{ matrix.pnpm }}"
 
       # Setup compilers and tools
 
