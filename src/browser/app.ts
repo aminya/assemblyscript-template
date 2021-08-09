@@ -1,10 +1,10 @@
 import { doSomething } from "./lib"
 
 function main() {
-  // get the inputs from the text field, and once button is hit, get the output from the wasm and display it.
+  // get the input from the text field, and once button is hit, passes it wasm and gets the output back, and finally displays it.
   const inputElement = document.getElementById("InputField") as HTMLInputElement | null
-  const runButtonElement = document.getElementById("runButton")
-  const outputElement = document.getElementById("Output") as HTMLOutputElement | null
+  const runButtonElement = document.getElementById("RunButton")
+  const outputElement = document.getElementById("OutputField") as HTMLOutputElement | null
   if (inputElement === null || runButtonElement === null || outputElement === null) {
     throw new Error("Page did not render correctly")
   }
