@@ -3,13 +3,13 @@
 An AssemblyScript template with support for many environments
 
 This template is all you need to get started in AssemblyScript.
-It allows you to write a library in AssemblyScript and use it in various environments
+It allows you to write a library in AssemblyScript, and use it in various environments.
 
 - The **wasm** library is in `./src/wasm/`.
   This is the AssemblyScript file that exports the functions for your library.
-- The **browser** app is in `./src/browser/`. It sets up a simple form to get input from the user and passes it to wasm.
+- The **browser** app is in `./src/browser/`. It sets up a simple form to get input from the user and passes it to the wasm.
 - The **node** wrappers are in `./src/node`.
-  The `lib.ts` file is a library file and the `cli.ts` file is meant to be used as a Node bin.
+  The `lib.ts` file is a library file, and the `cli.ts` file is meant to be used as a Node bin.
 - The **wasi** wrappers are in `./src/wasi` folder.
 
 Note: The AssemblyScript files have a `.as.ts` or `.as` extension, and the TypeScript files have a `.ts` extension.
