@@ -1,0 +1,58 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  Test:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - windows-latest
+          - macos-latest
+          - os: ubuntu-latest
+        node:
+          - 16
+        pnpm:
+          - 6
+    steps:
+      - uses: actions/checkout@v2
+
+      # Cache
+      - name: Cache
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.pnpm-store
+            D:\.pnpm-store
+          key: "cache-OS:${{ matrix.os }}-Node:${{ matrix.node }}-Pnpm:${{ matrix.pnpm }}"
+
+      # Setup compilers and tools
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ matrix.pnpm }}
+
+      # Build and Test
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build.node
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          path: ./dist
