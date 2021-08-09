@@ -1,4 +1,4 @@
-import "./as-bind" // eslint-disable-line import/no-unassigned-import
+import "./as-bind.d" // eslint-disable-line import/no-unassigned-import
 import * as AsBind from "as-bind"
 
 /** Instantiates wasm for the browser */

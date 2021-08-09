@@ -1,4 +1,4 @@
-import "./as-bind" // eslint-disable-line import/no-unassigned-import
+import "./as-bind.d" // eslint-disable-line import/no-unassigned-import
 import * as AsBind from "as-bind/dist/as-bind.cjs" // if using esm, change the extension to `esm.js`
 
 import { join, dirname } from "path"
