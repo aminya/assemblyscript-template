@@ -16,7 +16,7 @@
     "test.format": "prettier . --check",
     "lint": "eslint . --fix",
     "test.lint": "eslint .",
-    "test": "atom --test spec",
+    "test": "asp --verbose",
     "clean": "shx rm -rf dist",
     "build.wasm": "asc ./src/wasm/lib.as.ts -b ./dist/index.wasm --exportRuntime --transform as-bind --target release",
     "build.node": "npm run build.wasm && tsc -p ./src/node/tsconfig.json",
@@ -29,6 +29,7 @@
     "prepublishOnly": "shx rm -rf ./dist/tsconfig.tsbuildinfo"
   },
   "devDependencies": {
+    "@as-pect/cli": "^6.2.4",
     "@assemblyscript/loader": "^0.19.10",
     "@types/node": "16.4.13",
     "as-bind": "0.8.0",
