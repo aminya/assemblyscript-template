@@ -2,7 +2,7 @@
   "name": "assemblyscript-template",
   "author": "<Name>",
   "version": "0.0.0",
-  "description": "An assembly script package template",
+  "description": "An AssemblyScript template with support for many environments",
   "homepage": "https://github.com/<UserName>/assemblyscript-template",
   "license": "MIT",
   "files": [
