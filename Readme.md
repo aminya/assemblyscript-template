@@ -1,5 +1,7 @@
 # AssemblyScript-template
 
+[![CI](https://github.com/aminya/assemblyscript-template/actions/workflows/CI.yml/badge.svg)](https://github.com/aminya/assemblyscript-template/actions/workflows/CI.yml)
+
 An AssemblyScript template with support for many environments
 
 This template is all you need to get started in AssemblyScript.

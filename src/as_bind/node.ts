@@ -5,7 +5,7 @@ import { join, dirname } from "path"
 import { promises } from "fs"
 const { readFile } = promises
 
-/** Instantiates wasm for the browser */
+/** Instantiates wasm for node */
 export async function instantiate(imports?: AsBind.Imports) {
   const data = await readFile(join(dirname(dirname(__dirname)), "dist/index.wasm"))
   const wasmModule = await AsBind.instantiate<typeof import("../wasm/lib.as")>(data, imports)
