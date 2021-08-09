@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   Test:
@@ -15,7 +15,7 @@ jobs:
         os:
           - windows-latest
           - macos-latest
-          - os: ubuntu-latest
+          - ubuntu-latest
         node:
           - 16
         pnpm:
@@ -52,7 +52,19 @@ jobs:
       - name: Build
         run: pnpm build.node
 
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          path: ./dist
+      - name: Test
+        run: pnpm test
+
+      - name: Test Lint
+        if: contains(matrix.os, 'ubuntu')
+        run: pnpm test.lint
+
+      - name: Test Format
+        if: contains(matrix.os, 'ubuntu')
+        run: pnpm test.format
+
+      # If you want the built files
+      # - name: Upload artifacts
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     path: ./dist
