@@ -5,14 +5,16 @@ import { join, dirname } from "path"
 import { promises } from "fs"
 const { readFile } = promises
 
+type WasmLib = typeof import("../wasm/lib.as") // prettier-ignore
+
 /** Instantiates wasm for node */
 export async function instantiate(imports?: AsBind.Imports) {
   const data = await readFile(join(dirname(dirname(__dirname)), "dist/index.wasm"))
-  const wasmModule = await AsBind.instantiate<typeof import("../wasm/lib.as")>(data, imports)
+  const wasmModule = await AsBind.instantiate<WasmLib>(data, imports)
   return wasmModule.exports
 }
 
-let _exports: typeof import("../wasm/lib.as") | undefined
+let _exports: WasmLib | undefined
 
 /** Get the wasm exports (instantiates wasm on the first call) */
 export async function getExports(imports?: AsBind.Imports) {
