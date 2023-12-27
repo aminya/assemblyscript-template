@@ -35,12 +35,13 @@
     "@types/node": "16.18.68",
     "as-bind": "0.8.2",
     "as-wasi": "^0.6.0",
-    "assemblyscript": "~0.19",
+    "assemblyscript": "~0.19.23",
     "eslint-config-atomic": "^1.20.5",
     "parcel": "^2.10.3",
     "prettier-config-atomic": "^3.1.0",
     "servor": "^4.0.2",
-    "shx": "0.3.4"
+    "shx": "0.3.4",
+    "yaml": "^2.3.4"
   },
   "html": "./dist/index.html",
   "targets": {
