@@ -10,7 +10,7 @@ module.exports = {
       createImports({
         // put your web assembly imports here, and return the module
         // they can reference `instance`
-      })
+      }),
     )
     return instance
   },

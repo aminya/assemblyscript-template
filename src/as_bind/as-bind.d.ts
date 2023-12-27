@@ -2,7 +2,7 @@ declare module "as-bind" {
   import * as CoreLoader from "@assemblyscript/loader/index" // eslint-disable-line import/no-duplicates
   export type Imports = CoreLoader.Imports
 
-  // General asbind versionn
+  // General asbind version
   export const version: number
 
   // Our APIs
@@ -15,7 +15,7 @@ declare module "as-bind/dist/as-bind.cjs" {
   import * as CoreLoader from "@assemblyscript/loader/index" // eslint-disable-line import/no-duplicates
   export type Imports = CoreLoader.Imports
 
-  // General asbind versionn
+  // General asbind version
   export const version: number
 
   // Our APIs
