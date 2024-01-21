@@ -12,9 +12,10 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build.browser": "npm run build.wasm && parcel build --target html ./src/browser/index.html",
-    "build.browser.unit": "npm run build.wasm && tsc -p ./src/browser/tsconfig.json && shx cp -r ./src/browser ./dist",
-    "build.node": "npm run build.wasm && tsc -p ./src/node/tsconfig.json",
+    "build": "run-p build.*",
+    "build.browser": "run-s build.wasm && parcel build --target html ./src/browser/index.html",
+    "build.browser.unit": "run-s build.wasm && tsc -p ./src/browser/tsconfig.json && shx cp -r ./src/browser ./dist",
+    "build.node": "run-s build.wasm && tsc -p ./src/node/tsconfig.json",
     "build.wasi": "asc ./src/wasi/cli.as.ts -o ./dist/wasi.wasm --exportRuntime --transform as-bind --target release",
     "build.wasm": "asc ./src/wasm/lib.as.ts -o ./dist/index.wasm --exportRuntime --transform as-bind --target release",
     "clean": "shx rm -rf dist",
@@ -39,6 +40,7 @@
     "assemblyscript": "~0.27.23",
     "eslint": "^8.56.0",
     "eslint-config-atomic": "^1.20.6",
+    "npm-run-all2": "^6.1.1",
     "parcel": "^2.11.0",
     "prettier": "3.2.2",
     "prettier-config-atomic": "^4.0.0",
