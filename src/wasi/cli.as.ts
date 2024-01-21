@@ -1,20 +1,19 @@
-import "wasi" // eslint-disable-line import/no-unassigned-import
-import { Console, CommandLine } from "as-wasi"
+/* eslint-disable */
+import { wasi_console } from "@assemblyscript/wasi-shim/assembly/wasi_console"
+import { wasi_process } from "@assemblyscript/wasi-shim/assembly/wasi_process"
+/* eslint-enable */
 
 import { doSomething } from "../wasm/lib.as"
 
 function main(): void {
-  const commandLine = new CommandLine()
-  const args = commandLine.all()
-
-  if (args.length <= 1) {
+  if (wasi_process.argv.length <= 1) {
     throw new Error("The number of inputs to the CLI is incorrect. Pass an input!")
   }
 
-  const input = args[1]
+  const input = wasi_process.argv[1]
   const output = doSomething(input)
 
-  Console.log(output)
+  wasi_console.log(output)
 }
 
 main()
