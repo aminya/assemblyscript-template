@@ -1,11 +1,14 @@
-import "./as-bind.d" // eslint-disable-line import/no-unassigned-import
-import * as AsBind from "as-bind/dist/as-bind.cjs" // if using esm, change the extension to `esm.js`
+/// <reference types="./as-bind.d.ts" />
+import * as AsBind from "as-bind/dist/as-bind.cjs.js"
 
 import { join, dirname } from "path"
 import { promises } from "fs"
 const { readFile } = promises
+import * as desm from "desm"
 
 type WasmLib = typeof import("../wasm/lib.as") // prettier-ignore
+
+const __dirname = desm.dirname(import.meta.url)
 
 /** Instantiates wasm for node */
 export async function instantiate(imports?: AsBind.Imports) {

@@ -1,4 +1,4 @@
-import { doSomething } from "./lib"
+import { doSomething } from "./lib.js"
 
 async function main(argv: string[]) {
   if (argv.length <= 1) {
