@@ -1,4 +1,4 @@
-import { getExports } from "../as_bind/node"
+import { getExports } from "../as_bind/node.js"
 
 /** Documentation about the exported function */
 export async function doSomething(input: string) {

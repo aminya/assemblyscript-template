@@ -1,4 +1,4 @@
-import "./as-bind.d" // eslint-disable-line import/no-unassigned-import
+/// <reference types="./as-bind.d.ts" />
 import * as AsBind from "as-bind"
 
 type WasmLib = typeof import("../wasm/lib.as") // prettier-ignore

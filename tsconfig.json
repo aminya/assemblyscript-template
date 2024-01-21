@@ -21,7 +21,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": false,
     "outDir": "./dist"
