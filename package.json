@@ -24,12 +24,13 @@
     "start.browser": "servor ./dist/ --browse --reload",
     "start.node": "node ./dist/node/cli.js",
     "start.wasi": "wasmtime ./dist/wasi.wasm",
-    "test": "asp --verbose --config=./as-pect.config.cjs",
+    "test": "asp --verbose",
     "test.format": "prettier . --check",
     "test.lint": "eslint ."
   },
   "prettier": "prettier-config-atomic",
   "devDependencies": {
+    "@as-pect/assembly": "^8.1.0",
     "@as-pect/cli": "^8.1.0",
     "@assemblyscript/loader": "^0.27.23",
     "@types/node": "20.11.5",
