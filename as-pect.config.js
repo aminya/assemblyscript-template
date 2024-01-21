@@ -1,4 +1,4 @@
-export default {
+const aspectConfig = {
   /** A set of globs passed to the glob package that qualify typescript files for testing. */
   entries: ["**/__tests__/**/*.spec.as.ts"],
   /** A set of globs passed to the glob package that quality files to be added to each test. */
@@ -6,6 +6,7 @@ export default {
   /** A set of regexp that will disclude source files from testing. */
   disclude: [/node_modules/],
   /** Add your required AssemblyScript imports here. */
+  /* eslint-disable */
   async instantiate(memory, createImports, instantiate, binary) {
     let instance // Imports can reference this
     const myImports = {
@@ -20,3 +21,4 @@ export default {
   /** Specify if the binary wasm file should be written to the file system. */
   outputBinary: false,
 }
+export default aspectConfig
