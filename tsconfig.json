@@ -24,8 +24,8 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": false,
-    "outDir": "./dist",
+    "outDir": "./dist"
   },
   "compileOnSave": false,
-  "exclude": ["./**/*.as.ts"],
+  "exclude": ["./**/*.as.ts"]
 }
