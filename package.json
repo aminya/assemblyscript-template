@@ -45,7 +45,7 @@
     "eslint-config-atomic": "^1.20.6",
     "npm-run-all2": "^6.1.1",
     "parcel": "^2.11.0",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "prettier-config-atomic": "^4.0.0",
     "servor": "^4.0.2",
     "shx": "0.3.4",
