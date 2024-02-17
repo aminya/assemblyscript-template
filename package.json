@@ -38,7 +38,7 @@
     "@as-pect/assembly": "^8.1.0",
     "@as-pect/cli": "^8.1.0",
     "@assemblyscript/loader": "^0.27.23",
-    "@types/node": "20.11.17",
+    "@types/node": "20.11.19",
     "as-bind": "https://github.com/aminya/as-bind#1331fe8",
     "assemblyscript": "~0.27.23",
     "eslint": "^8.56.0",
