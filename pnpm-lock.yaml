@@ -18,19 +18,19 @@ devDependencies:
     version: 8.1.0
   '@as-pect/cli':
     specifier: ^8.1.0
-    version: 8.1.0(assemblyscript@0.27.26)
+    version: 8.1.0(assemblyscript@0.27.27)
   '@assemblyscript/loader':
     specifier: ^0.27.23
-    version: 0.27.26
+    version: 0.27.27
   '@types/node':
     specifier: 20.12.2
     version: 20.12.2
   as-bind:
     specifier: https://github.com/aminya/as-bind#1331fe8
-    version: github.com/aminya/as-bind/1331fe8(@assemblyscript/loader@0.27.26)(assemblyscript@0.27.26)
+    version: github.com/aminya/as-bind/1331fe8(@assemblyscript/loader@0.27.27)(assemblyscript@0.27.27)
   assemblyscript:
     specifier: ~0.27.23
-    version: 0.27.26
+    version: 0.27.27
   eslint:
     specifier: ^8.56.0
     version: 8.57.0
@@ -86,12 +86,12 @@ packages:
     resolution: {integrity: sha512-JPLYG9aVuncJaZ8sAqsb2oOebssbbTNahAB4WL4k4mwzgPw5H0gNB14YxSHr8wAiWvYUqLPYb+dGvGuFCUFcpQ==}
     dev: true
 
-  /@as-covers/core@0.4.2(assemblyscript@0.27.26):
+  /@as-covers/core@0.4.2(assemblyscript@0.27.27):
     resolution: {integrity: sha512-386ZK6yZwDXfnCBFabKDQtTuvDZmR1aW7eQBp89oN6WwXj+/1FZjIjyMudI1z5qcEnTJ+yS9BGLOC5KH0XDQGg==}
     dependencies:
       '@as-covers/assembly': 0.4.1
       '@as-covers/glue': 0.4.2
-      '@as-covers/transform': 0.4.2(assemblyscript@0.27.26)
+      '@as-covers/transform': 0.4.2(assemblyscript@0.27.27)
     transitivePeerDependencies:
       - assemblyscript
     dev: true
@@ -103,11 +103,11 @@ packages:
       table: 6.8.1
     dev: true
 
-  /@as-covers/transform@0.4.2(assemblyscript@0.27.26):
+  /@as-covers/transform@0.4.2(assemblyscript@0.27.27):
     resolution: {integrity: sha512-d8NGZbXJvXnZi/gOKTLnaMl138cOpFqTTvE0gXL3rSzEPE9948dVc+ylof+lfAiQJHWz2uAvGAUhFMN3TR5NPg==}
     dependencies:
       line-column: 1.0.2
-      visitor-as: 0.11.4(assemblyscript@0.27.26)
+      visitor-as: 0.11.4(assemblyscript@0.27.27)
     transitivePeerDependencies:
       - assemblyscript
     dev: true
@@ -116,18 +116,18 @@ packages:
     resolution: {integrity: sha512-ALDm5M0Zx/hoFZ27vS3/kjkzMHbcPt2IBIkNjJz0M798meRCJV6ZWbChfmi4kDcMqaPk/awU54b4Bpx+VxBKfg==}
     dev: true
 
-  /@as-pect/cli@8.1.0(assemblyscript@0.27.26):
+  /@as-pect/cli@8.1.0(assemblyscript@0.27.27):
     resolution: {integrity: sha512-bu2PUnWdYcF3aQ7X9rB6GXiE+b7Pi0MGMOyiShqdGlDCr3vKoD1kAK5Kb5rqY3tWRCC4gWO7/wupEynem6Qq0Q==}
     hasBin: true
     peerDependencies:
       assemblyscript: ^0.27.2
     dependencies:
-      '@as-covers/core': 0.4.2(assemblyscript@0.27.26)
-      '@as-covers/transform': 0.4.2(assemblyscript@0.27.26)
+      '@as-covers/core': 0.4.2(assemblyscript@0.27.27)
+      '@as-covers/transform': 0.4.2(assemblyscript@0.27.27)
       '@as-pect/assembly': 8.1.0
       '@as-pect/core': 8.1.0
       '@as-pect/transform': 8.1.0
-      assemblyscript: 0.27.26
+      assemblyscript: 0.27.27
       chalk: 5.3.0
       chalk-template: 0.4.0
       commander: 9.5.0
@@ -144,7 +144,7 @@ packages:
       '@as-pect/assembly': 8.1.0
       '@as-pect/snapshots': 8.1.0
       '@assemblyscript/loader': 0.25.2
-      assemblyscript: 0.27.26
+      assemblyscript: 0.27.27
       chalk: 5.3.0
       chalk-template: 0.4.0
       long: 5.2.3
@@ -177,15 +177,15 @@ packages:
   /@as-pect/transform@8.1.0:
     resolution: {integrity: sha512-dyWSMjsNWg8TmIAf7GXmvlQSae155pGR8rEIteHCNo8kn4boLQ8IGlL6k8DdacJl58mtHRQWx+N3v4u0RN5yfg==}
     dependencies:
-      assemblyscript: 0.27.26
+      assemblyscript: 0.27.27
     dev: true
 
   /@assemblyscript/loader@0.25.2:
     resolution: {integrity: sha512-q2PyrBmepQ0YxlWN99Vb1MmOSL982ePhGRxAscX2XlZZPlzhv5DgH5UAefTUFgBHfQE8FY1CWONBIvPxS7Mjjw==}
     dev: true
 
-  /@assemblyscript/loader@0.27.26:
-    resolution: {integrity: sha512-FgSDq9BXGyqvbi28VINCNPo/xL21IlvJEsm8F549T0Nq91EARsUJJjQNRKX2vp/tdgk6VbaFHrB3UYn88A/RKw==}
+  /@assemblyscript/loader@0.27.27:
+    resolution: {integrity: sha512-zeAM5zx4CT9shQuES+4UNfLVzlmkRrY9W1LujuEhS1xI/qcHr3BsU4SAOylR4D2lsRjhwcdqNEZkph/zA7+5Vg==}
     dev: true
 
   /@assemblyscript/wasi-shim@0.1.0:
@@ -2175,8 +2175,8 @@ packages:
       is-shared-array-buffer: 1.0.3
     dev: true
 
-  /assemblyscript@0.27.26:
-    resolution: {integrity: sha512-1Fn3r45s+F0zgOSTp2Hbw8+XTot/aNdzRToY+9peuWHAcQXRzlZZborBXcqkypYYvNvEa1etNxhlkqQ2oWZhNg==}
+  /assemblyscript@0.27.27:
+    resolution: {integrity: sha512-z4ijXsjjk3uespEeCWpO1K2GQySc6bn+LL5dL0tsC2VXNYKFnKDmAh3wefcKazxXHFVhYlxqNfyv96ajaQyINQ==}
     engines: {node: '>=16', npm: '>=7'}
     hasBin: true
     dependencies:
@@ -6260,12 +6260,12 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /visitor-as@0.11.4(assemblyscript@0.27.26):
+  /visitor-as@0.11.4(assemblyscript@0.27.27):
     resolution: {integrity: sha512-uih7AooY2V3LhzobjLqyEQzhYYBGeq0y/rZk295foM1Ko498f24NNXBDyM1SgzcLMFCAT/fpmSRco1BpTIdKNQ==}
     peerDependencies:
       assemblyscript: ^0.25.0
     dependencies:
-      assemblyscript: 0.27.26
+      assemblyscript: 0.27.27
       lodash.clonedeep: 4.5.0
       ts-mixer: 6.0.3
     dev: true
@@ -6380,7 +6380,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/aminya/as-bind/1331fe8(@assemblyscript/loader@0.27.26)(assemblyscript@0.27.26):
+  github.com/aminya/as-bind/1331fe8(@assemblyscript/loader@0.27.27)(assemblyscript@0.27.27):
     resolution: {tarball: https://codeload.github.com/aminya/as-bind/tar.gz/1331fe8}
     id: github.com/aminya/as-bind/1331fe8
     name: as-bind
@@ -6389,8 +6389,8 @@ packages:
       '@assemblyscript/loader': 0.27.x
       assemblyscript: 0.27.x
     dependencies:
-      '@assemblyscript/loader': 0.27.26
-      assemblyscript: 0.27.26
+      '@assemblyscript/loader': 0.27.27
+      assemblyscript: 0.27.27
     dev: true
 
   github.com/aminya/sort-package-json/076051b58be7b198732d1ce2b9a415ccd0c63a97:
