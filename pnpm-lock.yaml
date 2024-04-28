@@ -60,7 +60,7 @@ devDependencies:
     version: 5.4.5
   yaml:
     specifier: ^2.3.4
-    version: 2.4.1
+    version: 2.4.2
 
 packages:
 
@@ -3083,7 +3083,7 @@ packages:
     dev: true
     optional: true
 
-  /eslint-config-airbnb@18.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.23.2)(eslint@8.57.0):
+  /eslint-config-airbnb@18.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.2)(eslint-plugin-react@7.23.2)(eslint@8.57.0):
     resolution: {integrity: sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==}
     engines: {node: '>= 6'}
     requiresBuild: true
@@ -3099,7 +3099,7 @@ packages:
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
       eslint-plugin-react: 7.23.2(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
       object.assign: 4.1.5
       object.entries: 1.1.7
     dev: true
@@ -3137,8 +3137,8 @@ packages:
       typescript: 5.4.5
     optionalDependencies:
       coffeescript: 1.12.7
-      eslint-plugin-coffee: 0.1.15(@typescript-eslint/parser@7.1.1)(eslint-plugin-react-hooks@4.6.0)(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
+      eslint-plugin-coffee: 0.1.15(@typescript-eslint/parser@7.1.1)(eslint-plugin-react-hooks@4.6.2)(eslint@8.57.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -3211,7 +3211,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-coffee@0.1.15(@typescript-eslint/parser@7.1.1)(eslint-plugin-react-hooks@4.6.0)(eslint@8.57.0):
+  /eslint-plugin-coffee@0.1.15(@typescript-eslint/parser@7.1.1)(eslint-plugin-react-hooks@4.6.2)(eslint@8.57.0):
     resolution: {integrity: sha512-+qtkIPSc9etYqOODIlENqiRjID/oEoGMAAQJN988Aczy461NIwzaamFY6Fi0QDVVDb2v+OL/StVrk/QmyItfeg==}
     requiresBuild: true
     peerDependencies:
@@ -3223,7 +3223,7 @@ packages:
       coffeescript: 2.7.0
       doctrine: 2.1.0
       eslint: 8.57.0
-      eslint-config-airbnb: 18.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.23.2)(eslint@8.57.0)
+      eslint-config-airbnb: 18.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.8.0)(eslint-plugin-react-hooks@4.6.2)(eslint-plugin-react@7.23.2)(eslint@8.57.0)
       eslint-config-airbnb-base: 14.2.1(eslint-plugin-import@2.29.1)(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.1.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
@@ -3353,8 +3353,8 @@ packages:
       regexp-tree: 0.1.27
     dev: true
 
-  /eslint-plugin-react-hooks@4.6.0(eslint@8.57.0):
-    resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
+  /eslint-plugin-react-hooks@4.6.2(eslint@8.57.0):
+    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -6369,8 +6369,8 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
-  /yaml@2.4.1:
-    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
+  /yaml@2.4.2:
+    resolution: {integrity: sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==}
     engines: {node: '>= 14'}
     hasBin: true
     dev: true
