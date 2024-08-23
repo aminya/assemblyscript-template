@@ -18,7 +18,7 @@ jobs:
           - macos-latest
           - ubuntu-latest
         node:
-          - 22
+          - 22.6.0
         pnpm:
           - 9
     steps:
