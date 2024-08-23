@@ -18,9 +18,9 @@ jobs:
           - macos-latest
           - ubuntu-latest
         node:
-          - 20
+          - 22.6.0
         pnpm:
-          - 8
+          - 9
     steps:
       - uses: actions/checkout@v4
 
