@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Setup Pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
           version: ${{ matrix.pnpm }}
 
