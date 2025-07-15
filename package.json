@@ -29,6 +29,7 @@
     "test.format": "prettier . --check",
     "test.lint": "eslint ."
   },
+  "packageManager": "pnpm@10.13.1",
   "prettier": "prettier-config-atomic",
   "dependencies": {
     "@assemblyscript/wasi-shim": "^0.1.0",
