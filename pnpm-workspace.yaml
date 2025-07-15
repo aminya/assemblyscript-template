@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - "@parcel/watcher"
+  - "@swc/core"
+  - core-js
+  - glob-promise
+  - lmdb
+  - msgpackr-extract
