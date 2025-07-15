@@ -29,7 +29,6 @@
     "test.format": "prettier . --check",
     "test.lint": "eslint ."
   },
-  "packageManager": "pnpm@10.13.1",
   "prettier": "prettier-config-atomic",
   "dependencies": {
     "@assemblyscript/wasi-shim": "^0.1.0",
@@ -54,6 +53,7 @@
     "yaml": "^2.8.0"
   },
   "html": "./dist/index.html",
+  "packageManager": "pnpm@10.13.1",
   "targets": {
     "html": {
       "context": "browser",

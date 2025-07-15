@@ -1,6 +1,6 @@
 onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - '@swc/core'
+  - "@parcel/watcher"
+  - "@swc/core"
   - core-js
   - glob-promise
   - lmdb
