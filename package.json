@@ -41,7 +41,7 @@
     "@types/node": "24.0.14",
     "as-bind": "https://github.com/aminya/as-bind#1331fe8",
     "assemblyscript": "~0.28.0",
-    "eslint": "^9.0.0",
+    "eslint": "^8.5.0",
     "eslint-config-atomic": "^1.22.1",
     "npm-run-all2": "^8.0.0",
     "parcel": "^2.12.0",
