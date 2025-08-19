@@ -53,7 +53,7 @@
     "yaml": "^2.8.0"
   },
   "html": "./dist/index.html",
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.15.0",
   "targets": {
     "html": {
       "context": "browser",
