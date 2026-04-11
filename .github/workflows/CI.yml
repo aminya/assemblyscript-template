@@ -41,7 +41,7 @@ jobs:
           node-version-file: .nvmrc
 
       - name: Setup Pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       # Build and Test
 
