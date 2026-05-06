@@ -1063,7 +1063,7 @@ packages:
     engines: {node: '>= 0.4'}
 
   as-bind@https://codeload.github.com/aminya/as-bind/tar.gz/1331fe8:
-    resolution: {tarball: https://codeload.github.com/aminya/as-bind/tar.gz/1331fe8}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/aminya/as-bind/tar.gz/1331fe8}
     version: 0.8.2
     peerDependencies:
       '@assemblyscript/loader': 0.27.x
@@ -3048,7 +3048,7 @@ packages:
     hasBin: true
 
   sort-package-json@https://codeload.github.com/aminya/sort-package-json/tar.gz/076051b58be7b198732d1ce2b9a415ccd0c63a97:
-    resolution: {tarball: https://codeload.github.com/aminya/sort-package-json/tar.gz/076051b58be7b198732d1ce2b9a415ccd0c63a97}
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/aminya/sort-package-json/tar.gz/076051b58be7b198732d1ce2b9a415ccd0c63a97}
     version: 0.0.0-development
     hasBin: true
 
